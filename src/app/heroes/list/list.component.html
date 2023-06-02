@@ -1,0 +1,24 @@
+<h1>{{ title }}</h1>
+
+<input type="checkbox" (change)="chechkFondo()">
+Fondo. ( fondoAmarillo = {{fondoAmarillo}} )
+<br>
+
+<input type="checkbox" (change)="checkLetra()">
+tam.letra. ( letraGrande = {{letraGrande}} )
+<br>
+
+<div [ngClass]="asignaClases()">
+  <br>
+<h5>texto variará según el resultado del método.</h5>
+  <p>
+    <br>
+    <br>
+    si fondoAmarillo = true -> el fondo será amarillo
+  <br>
+    si letraGrande = true -> las letras serán grandes.
+  </p>
+
+</div>
+
+<hr>
